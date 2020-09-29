@@ -12,17 +12,17 @@ def password_generator():
 
     password = []    
 
-    for i in range(15) :
+    for i in range(10) :
         character_random = random.choice(character)
         password.append(character_random)
 
-    password = ''.join(password)
+    new_password = ''.join(password)
     
-    return password
+    return new_password
 
 def run():
-    password = password_generator()
-    print('your new password is: ' + password)
+    secure_password = password_generator()
+    print('your new password is: ' + secure_password)
 
 
 
